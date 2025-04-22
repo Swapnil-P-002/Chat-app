@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Group Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h2 id="division-title">Chat Room</h2>
+    <div id="chat-box" class="chat-box"></div>
+
+    <input type="text" id="message-input" placeholder="Type your message..." />
+    <button id="send-btn">Send</button>
+
+    <input type="file" id="image-upload" />
+    <button onclick="markAttendance()">Mark Attendance</button>
+    <button onclick="createPoll()">Create Poll</button>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
